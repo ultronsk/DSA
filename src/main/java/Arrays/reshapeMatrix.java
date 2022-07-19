@@ -8,19 +8,16 @@ public class reshapeMatrix {
         int matR = mat.length;
         int matC = mat[0].length;
         int r = 1, c = 4;
-        int gd = matR * matC;
-        int pd = r*c;
-        if(gd != pd){
+        if(matR * matC != r*c){
             System.out.println("Return default mat");
-        }else{
-            System.out.println("put value in new Array ");
         }
 
-        //Edge case
-        //If the given new r,c is similar to the exisitng matrix int hat case we simply return the existing matrxi
         if(r==matR && c==matC){
             System.out.println("Return original Matrix here ");
         }
+        //Edge case
+        //If the given new r,c is similar to the exisitng matrix int hat case we simply return the existing matrxi
+
 
         int new_index =0;
         int old_index =0;
